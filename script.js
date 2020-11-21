@@ -1,4 +1,5 @@
 import { display } from "./automation.js";
+import blankFiller from "./filler.js";
 
 const d=document,
   input=d.getElementById('test'),
@@ -21,6 +22,7 @@ const d=document,
 
   d.addEventListener('DOMContentLoaded',e=>{
     display(input,heroList,suggestValue);
+    blankFiller()
   })
   d.addEventListener("keyup",e=>{
     

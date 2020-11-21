@@ -6,7 +6,9 @@
 #show {
   border: 1px solid black;
 }
+.hero-info {
+  cursor: pointer;
+}
 .hl {
   background-color: chartreuse;
-  cursor: pointer;
 }
