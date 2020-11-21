@@ -1,0 +1,12 @@
+#container {
+  text-align: center;
+  background-color: aqua;
+  margin-top: 50px;
+}
+#show {
+  border: 1px solid black;
+}
+.hl {
+  background-color: chartreuse;
+  cursor: pointer;
+}
