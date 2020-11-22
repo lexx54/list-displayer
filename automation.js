@@ -17,9 +17,9 @@ export function display(inputValue,list,container){
         heroName=hero.name.replace(regex,`<span class="hl">${this.value}</span>`),
         heroFaction=hero.faction.replace(regex,`<span class="hl">${this.value}</span>`);
         return `
-        <p class="hero-info">
-        <span class="name">${heroName}</span>
-        <span class="population">${heroFaction}</span>
+        <p class="hero-info" id="${hero.name}">
+        <span class="name info">${heroName}</span>
+        <span class="faction info">${heroFaction}</span>
         </p>
         `
       }).join("")

@@ -3,7 +3,7 @@ import blankFiller from "./filler.js";
 
 const d=document,
   input=d.getElementById('test'),
-  suggestValue=d.getElementById('suggestion'),
+  suggestValue=d.getElementById('show'),
   heroList=[
     {name:'lucius',faction:"lightbearer"},
     {name:'belinda', faction:'lightbearer'},
@@ -22,8 +22,8 @@ const d=document,
 
   d.addEventListener('DOMContentLoaded',e=>{
     display(input,heroList,suggestValue);
-    blankFiller()
-  })
-  d.addEventListener("keyup",e=>{
     
+  })
+  d.addEventListener("click",e=>{
+    blankFiller(e,input)
   })
